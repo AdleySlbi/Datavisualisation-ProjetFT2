@@ -72,9 +72,9 @@
 
 <!-- Début de la zone de contenu -->
 
-    <!-- Début de la zone résumé-->
+    
     <section id="contentArea">
-
+        <!--Partie 1-->
         <div class="numbersOnline">
             <div class="number" id="boiteNombreUn">
                 <p class="texteForSquares">Total des parties lancées en <br> INVITE RECEIVED</p>
@@ -93,10 +93,10 @@
                 <p  class="nombresOnline additionalMarginForVertical">24 600</p >
             </div>
         </div>
-        <!-- Fin de la zone résumé-->
+        <!-- Fin de la Partie 1-->
 
 
-        <!-- Début de la zone lancement de partie-->
+        <!--Partie 2-->
         <div class="gameStart">
             <h2>COMMENT LES PARTIES EN LIGNE SONT LANCÉS</h2>
             <div class="graphiqueUn">
@@ -104,9 +104,9 @@
             </div>
             <!-- Insérer le graphique -->
         </div>
-        <!-- Début de la zone lancement de partie-->
+        <!--Fin de la partie 2-->
 
-        <!-- Début de la section fin de partie-->
+        <!--Partie 3-->
         <div class="endGame">
             <h2>LES RAISON POURQUOI LES PARTIES SE FINISSENT</h2>
             <div class="containerForEndGame">
@@ -132,12 +132,14 @@
                 </div>
             </div>
         </div>
-        <!-- Fin de la section fin de partie-->
+        <!-- Fin de la Partie 3-->
 
+        <!--Partie 4-->
         <div class="deuxCamembert">
             <div class="boxCamembert" id="camemebertUn">
                 <h2>PAYS QUI JOUENT LE PLUS EN LIGNE</h2>
                 <!-- Insérer le graphique en camembert1-->
+                <div id="chart_div_1"></div>
             </div>
 
             <div class="boxCamembert" id="camembertDeux">
@@ -145,7 +147,9 @@
                 <!-- Insérer le graphique en camembert2-->
             </div>
         </div>
+        <!--Fin de la Partie 4-->
 
+        <!--Partie 5-->
         <div class="dernierGraph">
             <div class="partieGaucheGraph">
                 <h2>PAYS QUI COMPTE LE PLUS DE PROBLÈME DE CONNEXION</h2>
@@ -159,9 +163,62 @@
                 <span id="numberDroiteGraph">2 568</span>
             </div>
         </div>
+        <!--Fin de la partie 5-->
 
     </section>
     <!-- Fin de la zone de contenu -->
 
 </body>
+
+<!--Début du script pour le premier camembert-->
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+
+  // Load the Visualization API and the corechart package.
+  google.charts.load('current', {'packages':['corechart']});
+
+  // Set a callback to run when the Google Visualization API is loaded.
+  google.charts.setOnLoadCallback(drawChart);
+
+  // Callback that creates and populates a data table,
+  // instantiates the pie chart, passes in the data and
+  // draws it.
+  function drawChart() {
+
+    // Create the data table.
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'Topping');
+    data.addColumn('number', 'Slices');
+    data.addRows([
+      ['United States', 12223],
+      ['France', 2508],
+      ['Canada', 2120],
+      ['United Kingdom', 1246],
+      ['South Korea', 1101],
+      ['Germany', 992],
+      ['Switzerland', 504],
+      ['Russia', 492],
+      ['Australia', 451],
+      ['Spain', 409]
+    ]);
+
+    // Changement de couleur et taille (couleurs dans l'ordre)
+    var options = {'width':650,
+                   'height':350,
+                   'colors': ['#3A9897',
+                             '#DD021B',
+                             '#EFA802', 
+                             '#931883', 
+                             '#47971B', 
+                             '#FF8A2C', 
+                             '#F0A497', 
+                             '#CF310B', 
+                             '#2236C3', 
+                             '#A42CFF']};
+
+    // Instantiate and draw our chart, passing in some options.
+    var chart = new google.visualization.PieChart(document.getElementById('chart_div_1'));
+    chart.draw(data, options);
+  }
+</script>
 </html>
