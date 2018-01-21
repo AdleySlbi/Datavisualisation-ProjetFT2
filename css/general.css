@@ -1,0 +1,145 @@
+/*Import the lato font*/
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: aliceblue;
+    font-family:'lato', sans-serif;
+}
+
+/*Début de la side bar*/
+#sideMenu {
+    background-color: rgb(37, 44, 58);
+    width: 250px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+/*Début de la zone logo / jaipur*/
+.jaipurHeader {
+    display: flex;
+    padding: 10px 10px 10px 10px;
+    margin: 20px auto;
+    width: 200px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#logoJaipur {
+    width: 60px;
+    height: 60px;
+}
+
+#jaipurTitle {
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 2px 2px rgb(210, 135, 166);
+}
+/*Fin de la zone logo / jaipur*/
+
+/*Englobe la liste des éléments a */
+nav {
+    padding-top: 25px;
+}
+/*Sélectionne les link (a)*/
+.gameMode {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-bottom: 2px solid white;
+    font-weight: 900;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+
+.gameMode:hover {
+    background-color: rgb(56, 67, 88);
+}
+
+/*Lorsque l'on clique sur les link (a)*/
+.onPage {
+    background-color: rgb(100, 109, 128);
+    border-left: 5px solid white;
+    padding: 15px 30px 15px 25px;
+}
+/*Pour le premier a pour ajouter une bordure au haut de la liste*/
+#first {
+    border-top: 2px solid white;
+}
+/*Fin de la side bar*/
+
+/*Début du premier header*/
+.head1 {
+    margin-left: 250px;
+    padding: 20px;
+    padding-bottom: 40px;
+    background-color: white;
+}
+
+.userField {
+    display: inline-block;
+    float: right;
+}
+
+.elementHeaderUn {
+    display: inline-block;
+    padding-right: 20px;
+    text-decoration: none;
+    color: rgb(87, 96, 125);
+}
+
+/*Fin du premier header*/
+
+/*Début du deuxième header*/
+.head2 {
+    margin-left: 250px;
+    padding: 15px 50px 15px 50px;
+    background-color: white;
+    border: 1px solid rgb(160, 160, 160);
+    overflow: hidden;
+}
+
+.presentationField {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.actualGameMode {
+    text-transform: uppercase;
+    color: rgb(37, 44, 58);
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.subtitleGameMode {
+    font-style: italic;
+}
+
+.printButton {
+    float: right;
+    padding: 6px 12px;
+    border: 3px solid black;
+    border-radius: 10px;
+    text-transform: uppercase;
+    background-color: rgb(37, 44, 58);
+    color: white;
+    text-decoration: none;
+}
+
+.performanceGameMode {
+    padding-top: 50px;
+    font-weight: 900;
+    color: rgb(87, 96, 125);
+    text-transform: uppercase;
+}
+
+/*Fin du deuxième header*/

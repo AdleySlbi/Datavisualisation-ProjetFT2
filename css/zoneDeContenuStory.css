@@ -1,0 +1,84 @@
+#contentArea {
+    margin-left: 250px;
+    padding: 15px;
+    background-color: rgb(230, 234, 237);
+}
+
+h2 {
+    color: rgb(87, 96, 125);
+    font-weight: 400;
+    padding: 10px;
+    display: flex;
+}
+
+/*Partie 1 (4 boite de couleurs différent)*/
+.numbersOnline {
+    display: flex;
+    justify-content: center;
+    margin: 20px 38px 0px 38px;
+}
+
+.number {
+    /*Permet de définir la taille de chaque boite*/
+    width: 230px;
+    height: 200px;
+    margin: 0px 20px;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+    /*Début du style pour chaque boite*/
+#boiteNombreUn {
+
+    background-color: rgb(75, 153, 89);
+    border-radius: 10px;
+}
+#boiteNombreDeux {
+    background-color: rgb(133, 41, 126);
+    border-radius: 10px;
+}
+#boiteNombreTrois {
+    background-color: rgb(228, 169, 59);
+    border-radius: 10px;
+}
+#boiteNombreQuatre {
+    background-color: rgb(90, 154, 154);
+    border-radius: 10px;
+}
+
+    /*Fin du style pour chaque boite*/
+
+.texteForSquares {
+    padding-top: 5px;
+}
+.nombresOnline {
+    font-weight: 900;
+    font-size: 40px;
+    margin-top: 40px;
+}
+.additionalMarginForVertical { /*Pour mettre tout au même niveau*/
+    margin-top: 60px;
+}
+/*Fin de la partie 1*/
+
+/*Début de la partie 2*/
+.connexionProbleme {
+    background-color: #fff;
+    margin: 20px 38px 0px 38px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+/*Fin de la partie 2*/
+
+
+.signedInPart {
+    background-color: #fff;
+    margin: 20px 38px 0px 38px;
+    border-radius: 10px;
+    overflow: hidden;
+}
