@@ -52,12 +52,6 @@
                 <p class="subtitleGameMode">Lorem ipsum doloris tempuris novalis rosas temporalis</p>
                 <p class="performanceGameMode">Performances</p>
             </div>
-
-            <div class="boxForPrint">
-                <a href="#" class="printButton">Imprimer 
-                    <i class="fa fa-print" aria-hidden="true"></i>
-                </a>
-            </div>
         </div>
     </section>
     <!--Fin deuxième header-->
@@ -67,47 +61,41 @@
 <!--END OF GÉNÉRAL CODE FOR EVERY GAME MODE -->
 <!--END OF GÉNÉRAL CODE FOR EVERY GAME MODE -->
 
+<!--Début de la zone de contenu-->
 
-
-
-<!-- Début de la zone de contenu -->
-
-    
     <section id="contentArea">
-        <!--Partie 1-->
-        <div class="numbersOnline">
-            <div class="number" id="boiteNombreUn">
+
+        <!--Début de la Partie 1-->
+        <div class="donneOnline">
+            <div class="nombres" id="boiteNombreUn">
                 <p class="texteForSquares">Total des parties lancées en <br> INVITE RECEIVED</p>
-                <p  class="nombresOnline">11 640</p >
+                <p  class="nombresOnline">12 281</p >
             </div>
-            <div class="number" id="boiteNombreDeux">
+            <div class="nombres" id="boiteNombreDeux">
                 <p class="texteForSquares">Total des parties lancées en <br> INVITE SENT</p>
-                <p class="nombresOnline">11 604</p >
+                <p class="nombresOnline">12 201</p >
             </div>
-            <div class="number" id="boiteNombreTrois">
+            <div class="nombres" id="boiteNombreTrois">
                 <p class="texteForSquares">Total des parties lancées en <br> MATCH MAKING</p>
-                <p  class="nombresOnline">1 356</p >
+                <p  class="nombresOnline">25 922</p >
             </div>
-            <div class="number" id="boiteNombreQuatre">
+            <div class="nombres" id="boiteNombreQuatre">
                 <p class="texteForSquares">Total des parties lancées <br> </p>
                 <p  class="nombresOnline additionalMarginForVertical">24 600</p >
             </div>
         </div>
-        <!-- Fin de la Partie 1-->
+        <!--Fin de la Partie 1-->
 
 
-        <!--Partie 2-->
+        <!--Début de la Partie 2-->
         <div class="gameStart">
             <h2>COMMENT LES PARTIES EN LIGNE SONT LANCÉS</h2>
-            <div id="graphiqueUn">
-
-            </div>
-            <!-- Insérer le graphique -->
-            <div id="graph_1"></div>
+            <!-- Insérer le graphique "graphPartieDeux" -->
+            <div id="graph_part_2"></div>
         </div>
-        <!--Fin de la partie 2-->
+        <!--Fin de la Partie 2-->
 
-        <!--Partie 3-->
+        <!--Début de la Partie 3-->
         <div class="endGame">
             <h2>LES RAISON POURQUOI LES PARTIES SE FINISSENT</h2>
             <div class="containerForEndGame">
@@ -130,39 +118,25 @@
                     <img src="img/reseau.png" alt="imageDeTrophé" class="imgEndGame">
                     <span class="nombreFinDePartie">2 568</span>
                     <p class="textContentFinDePartie">Nombre de sessions qui se termine suite à un problème de connexion</p>
-                </div>
-            </div>
+                </div> 
+            </div> 
         </div>
-        <!-- Fin de la Partie 3-->
+        <!--Fin de la Partie 3-->
 
-        <!--Partie 4-->
-        <div class="deuxCamembert">
-            <div class="boxCamembert" id="camemebertUn">
-                <h2>PAYS QUI JOUENT LE PLUS EN LIGNE</h2>
-                <!-- Insérer le graphique en camembert1-->
-                <div id="graph_2"></div>
-            </div>
-
-            <div class="boxCamembert" id="camembertDeux">
-                <h2>PAYS QUI FINISSENT LE PLUS LEURS <br> PARTIES EN ONLINE</h2>
-                <!-- Insérer le graphique en camembert2-->
-                <div id="graph_3"></div>
-            </div>
+        <!--Début de la Partie 4-->
+        <div class="gameModeMostPlayed">
+            <h2>MODE DE JEU LE PLUS JOUÉ PAR PAYS</h2>
+                <div id="boxForTheMap">
+                    <div id="graph_map"><!-- Insérer le graphique de la carte--></div>
+                </div>
         </div>
         <!--Fin de la Partie 4-->
 
-        <!--Partie 5-->
-        <div class="dernierGraph">
-            <div class="partieGaucheGraph">
-                <h2>PAYS QUI COMPTE LE PLUS DE PROBLÈME DE CONNEXION</h2>
-                <div id="graph_4">
-                    <!-- Insérer le graphique -->
-                </div>
-            </div>
-
-            <div class="partieDroiteGraph">
-                <h3 id="sousTitreGraph">NOMBRE DE PARTIES QUI SE TERMINENT SUITE À UN PROBLÈME DE CONNEXION</h3>
-                <span id="numberDroiteGraph">2 568</span>
+        <!--Début de la Partie 5-->
+        <div class="resumeByCountry">
+            <h2>PAYS QUI COMPTE LE PLUS DE PROBLÈME DE CONNEXION</h2>
+            <div class="wrapperLastGraph">
+                <div id="graph_part_5"><!--Insérer le graphique--></div>
             </div>
         </div>
         <!--Fin de la partie 5-->
@@ -170,10 +144,11 @@
     </section>
     <!-- Fin de la zone de contenu -->
 
-<!--/!\ LINK POUR THE SCRIPTS /!\-->
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-<script src="js/online.js"></script>
-
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <!--Appel par partie-->
+    <script type="text/javascript" src="js/online/graphPartieDeux.js"></script>
+    <script type="text/javascript" src="js/online/graphMap.js"></script>
+    <script type="text/javascript" src="js/online/graphPartieCinq.js"></script>
 
 </body>
 </html>

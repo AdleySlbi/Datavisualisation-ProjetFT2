@@ -4,16 +4,22 @@
     background-color: rgb(230, 234, 237);
 }
 
-/*Début du style pour la zone des chiffres*/
-.numbersOnline {
+h2 {
+    color: rgb(87, 96, 125);
+    font-weight: 400;
+    padding: 10px;
+    display: flex;
+}
+
+/*Début du style pour la Partie 1*/
+.donneOnline {
     display: flex;
     justify-content: center;
     margin: 20px 38px 0px 38px;
 }
 
 
-.number {
-    /*Permet de définir la taille de chaque boite*/
+.nombres {
     width: 230px;
     height: 200px;
     margin: 0px 20px;
@@ -23,10 +29,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
-    /*Début du style pour chaque boite*/
+    /* Style pour chaque boite, dans l'ordre */
 #boiteNombreUn {
     background-color: rgb(133, 41, 126);
     border-radius: 10px;
@@ -43,45 +48,44 @@
     background-color: rgb(90, 154, 154);
     border-radius: 10px;
 }
-    /*Fin du style pour chaque boite*/
 
 .texteForSquares {
     padding-top: 5px;
 }
+
 .nombresOnline {
     font-weight: 900;
     font-size: 40px;
     margin-top: 40px;
 }
 
-.additionalMarginForVertical { /*Pour mettre tout au même niveau*/
+.additionalMarginForVertical { /*Pour mettre tous les chiffres au même niveau*/
     margin-top: 60px;
 }
-/*Fin du style pour la zone des chiffres*/
+    /* Fin du style pour chaque boite */
+/*Fin du style pour la Partie 1*/
 
-h2 {
-    color: rgb(87, 96, 125);
-    font-weight: 400;
-    padding: 10px;
-    display: flex;
-}
-
-/*Début du style pour la zone de lancement de partie*/
+/*Début du style pour la Partie 2*/
 .gameStart {
     background-color: #fff;
     margin: 20px 38px 0px 38px;
     border-radius: 10px;
-    overflow: hidden;
+    max-height: 500px;
 }
-/*Fin du style pour la zone de lancement de partie*/
+/*Fin du style pour la Partie 2*/
 
-/*Début du style pour la zone de fin de partie*/
+/*Début du style pour la Partie 3*/
     /*Début Général*/
-.endGame { /*Permet de rendre la boite responsive*/
+.endGame {
     margin: 20px 38px 0px 38px;
     background-color: #fff;
     border-radius: 10px;
     overflow: hidden;
+}
+
+.carteDuMonde {
+    height: 500px;
+    width: 50%;
 }
 
 .containerForEndGame {
@@ -114,57 +118,40 @@ h2 {
     margin-top: 5px;
     color: rgb(87, 96, 125);
 }
-/*Fin du style pour la zone de fin de partie*/
+/*Fin du style pour la partie 3*/
 
-/*Début de la zone des deux camemberts*/
-.deuxCamembert {
+/*Début de la Partie 4*/
+.gameModeMostPlayed {
     margin: 20px 38px 0px 38px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.boxCamembert {
-    width: 45%;
+    max-height: 500px;
     background-color: white;
     border-radius: 10px;
+}
+
+#boxForTheMap {
+    width: 75%;
     display: flex;
-    flex-direction: column;
+    background-color: beige;
     align-items: center;
+    justify-content: center;
     text-align: center;
     overflow: hidden;
+    max-height: 450px;
 }
-/*Fin de la zone des deux camemberts*/
+/*Fin de la Partie 4*/
 
 /*Début de la zone pour le dernier graphique*/
-
-.dernierGraph {
-    margin: 20px 38px 0px 38px;
+.resumeByCountry {
     background-color: #fff;
+    margin: 20px 38px 0px 38px;
     border-radius: 10px;
-    overflow: hidden;
+}
+
+.wrapperLastGraph {
     display: flex;
-}
+    justify-content: center;
+    align-items: center;
+} 
 
-.partieGaucheGraph {
-    width: 70%;
-
-}
-
-.partieDroiteGraph {
-    width: 30%;
-    text-align: center;
-    border-left: rgb(151, 151, 151) solid 2px;
-    padding: 10px 15px 0px 10px;
-}
-
-#sousTitreGraph {
-    font-weight: 200px;
-    font-size: 13px;
-}
-
-#numberDroiteGraph {
-    font-size: 70px;
-    color: rgb(228, 169, 59);
-}
 /*Fin de la zone pour le dernier graphique*/
 

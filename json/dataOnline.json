@@ -1,0 +1,18 @@
+{
+    "jaipur" : {
+        "mdj" : {
+            "online" : {
+                "inviteReceived": 11640,
+                "inviteSent": 11604,
+                "matchmaking": 1356,
+                "total":24600,
+                "country" : {
+                    "france" : {
+
+                    }
+                }
+            }
+        }
+    }
+}
+
