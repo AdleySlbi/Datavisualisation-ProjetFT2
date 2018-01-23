@@ -130,5 +130,37 @@ nav {
     color: rgb(87, 96, 125);
     text-transform: uppercase;
 }
-
 /*Fin du deuxième header*/
+/*Pour les zones de contenu avec les graphiques*/
+
+#contentArea {
+    margin-left: 250px;
+    padding: 15px;
+    background-color: rgb(230, 234, 237)
+}
+
+h2 {
+    color: rgb(87, 96, 125);
+    font-weight: 400;
+    padding: 10px;
+    display: flex;
+}
+
+.forBoxes {
+    background-color: #fff;
+    margin: 20px 38px 0px 38px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.wrapperForGraph {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 500px;
+}
+
+#tooltipCenter {
+    text-align: center;
+}
+

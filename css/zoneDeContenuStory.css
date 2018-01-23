@@ -1,15 +1,3 @@
-#contentArea {
-    margin-left: 250px;
-    padding: 15px;
-    background-color: rgb(230, 234, 237);
-}
-
-h2 {
-    color: rgb(87, 96, 125);
-    font-weight: 400;
-    padding: 10px;
-    display: flex;
-}
 
 /*Partie 1 (4 boite de couleurs différent)*/
 .numbersOnline {
@@ -65,20 +53,4 @@ h2 {
     margin-top: 60px;
 }
 /*Fin de la partie 1*/
-
-/*Début de la partie 2*/
-.connexionProbleme {
-    background-color: #fff;
-    margin: 20px 38px 0px 38px;
-    border-radius: 10px;
-    overflow: hidden;
-}
-/*Fin de la partie 2*/
-
-
-.signedInPart {
-    background-color: #fff;
-    margin: 20px 38px 0px 38px;
-    border-radius: 10px;
-    overflow: hidden;
-}
+/*Pour mettre en page toute les boites*/

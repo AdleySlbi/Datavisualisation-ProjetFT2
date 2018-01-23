@@ -22,9 +22,8 @@ function drawStacked() {
       ]);
       
       var options = {
-        chartArea: {width: '60%'},
+        chartArea: {width: '50%'},
         isStacked: true,
-        height: 400, 
         hAxis: {
           title: 'Total des parties',
           minValue: 0,
@@ -34,6 +33,6 @@ function drawStacked() {
           title: 'Pays'
         }
       };
-      var chart = new google.visualization.BarChart(document.getElementById('graph_part_2'));
+      var chart = new google.visualization.BarChart(document.getElementById('graph_account'));
       chart.draw(data, options);
     }

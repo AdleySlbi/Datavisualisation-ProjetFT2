@@ -52,12 +52,6 @@
                 <p class="subtitleGameMode">Lorem ipsum doloris tempuris novalis rosas temporalis</p>
                 <p class="performanceGameMode">Performances</p>
             </div>
-
-            <div class="boxForPrint">
-                <a href="#" class="printButton">Imprimer 
-                    <i class="fa fa-print" aria-hidden="true"></i>
-                </a>
-            </div>
         </div>
     </section>
     <!--Fin deuxième header-->
@@ -96,52 +90,54 @@
         <!--Fin de la Partie 1-->
 
         <!--Partie 2-->
-        <div class="levelInCountry">
+        <div class="forBoxes">
             <h2>LES DIFFÉRENTS NIVEAUX DE JEU SELON LES PAYS</h2>
-            <div class="graphDiffLevel">
-                <!-- Add the graph -->
+            <div class="wrapperForGraph">
+                <div id="graph_level">
+                    <!-- Add the graph differentLevel.js -->
+                </div>
             </div>
         </div>
         <!--Fin de la Partie 2-->
 
         <!--Partie 3-->
-        <div class="troisCamembert">
-            <div class="camembertUn" id="camembert">
-                <h2>PAYS QUI FINISSENT PAR <br>UNE VICTOIRE</h2>
-                <div class="graphCamembertSoloUn">
-                <!--Add the graph-->
+        <div class="forBoxes">
+            <h2>DÉTAILS PAR PAYS</h2>
+            <div class="wrapperForGraph">
+                <div id="graph_map">
+                    <!-- Add the graph graphMap.js -->
                 </div>
-                
-            </div>
-            
-            <div class="camembertDeux" id="camembert">
-                <h2>PAYS QUI FINISSENT PAR <br>UNE DÉFAITE</h2>
-                <div class="graphCamembertSoloDeux">
-                <!--Add the graph-->
-                </div>
-                
-            </div>
-
-            <div class="camembertTrois" id="camembert">
-                <h2>PAYS QUI NE FINISSENT<br>PAS LEURS PARTIES</h2>
-                <div class="graphCamembertSoloTrois">
-                <!--Add the graph-->
-                </div>
-                
             </div>
         </div>
         <!--Fin de la Partie 3-->
 
         <!--Partie 4-->
-        <div class="accountDuringSolo">
+        <div class="forBoxes">
             <h2>NOMBRE DE PERSONNE AYANT UN COMPTE JAIPUR PENDANT UNE PARTIE</h2>
-            <div class="graphAccSolo">
-
+            <div class="wrapperForGraph">
+                <div id="graph_account">
+                    <!-- Add the graph accountSolo.js -->
+                </div>
             </div>
         </div>
-        <!--Fin de la partie 4-->
-
+        <!--Fin de la Partie 4-->
+        
+        <!--Partie 5-->
+        <div class="forBoxes">
+            <h2>MODE DE JEU LES PLUS JOUÉ</h2>
+            <div class="wrapperForGraph">
+                <div id="graph_resume">
+                    <!-- Add the graph lastGraph.js -->
+                </div>
+            </div>
+        </div>
+        <!--Fin de la Partie 5-->
     </section>
-
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <!--Appel par partie-->
+    <script type="text/javascript" src="js/solo/lastGraph.js"></script>
+    <script type="text/javascript" src="js/solo/graphMap.js"></script>
+    <script type="text/javascript" src="js/solo/differentLevel.js"></script>
+    <script type="text/javascript" src="js/solo/accountSolo.js"></script>
 </body>
 </html>

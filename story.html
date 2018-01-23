@@ -52,12 +52,6 @@
                 <p class="subtitleGameMode">Lorem ipsum doloris tempuris novalis rosas temporalis</p>
                 <p class="performanceGameMode">Performances</p>
             </div>
-
-            <div class="boxForPrint">
-                <a href="#" class="printButton">Imprimer 
-                    <i class="fa fa-print" aria-hidden="true"></i>
-                </a>
-            </div>
         </div>
     </section>
     <!--Fin deuxième header-->
@@ -93,24 +87,51 @@
 
 
         <!-- Partie 2-->
-        <div class="connexionProbleme">
-            <h2>PAYS QUI COMPTE LE PLUS DE PROBLÈME DE CONNEXION</h2>
-            <div class="graphCoProbleme">
-                <!-- Add the graph -->
-            </div>
+        <div class="forBoxes">
+            <h2>RÉPARTITION DES NIVEAUX DE JEU PAR PAYS</h2>
+                <div id="graph_level">
+                    <!-- Add the graph 'graphNiveauDeJeu.js'-->
+                </div>
+            
         </div>
         <!-- Fin de la Partie 2-->
 
         <!-- Partie 3-->
-        <div class="signedInPart">
-            <h2>NOMBRE DE PERSONNE AYANT UN COMPTE JAIPUR PENDANT UNE PARTIE</h2>
-            <div class="graphSignedIn">
-                <!-- Add the graph -->
+        <div class="forBoxes">
+            <h2>DÉTAILS PAR PAYS</h2>
+            <div class="wrapperForGraph">
+                <div id="graph_map">
+                    <!-- Add the graph 'graphMap.js'-->
+                </div>
             </div>
         </div>
-        <!-- Fin de la Partie 3-->        
-            
-    </section>
+        <!--Fin de la Partie 3-->        
 
+        <!--Début de la Partie 4-->
+        <div class="forBoxes">
+            <h2>NOMBRES DE PERSONNES AYANT UN COMPTE</h2>
+            <div id="graph_account">
+                <!-- Add the graph 'graphAccount.js'-->
+            </div>
+        </div>
+        <!--Fin de la Partie 4-->
+
+        <!--Début de la Partie 5-->
+        <div class="forBoxes">
+            <h2>MODE DE JEU LE PLUS JOUÉ PAR PAYS</h2>
+            <div class="wrapperForGraph">
+                <div id="graph_resume">
+                    <!-- Add the graph 'lastGraph.js'-->
+                </div>
+            </div>
+        </div>
+        <!--Fin de la Partie 5-->
+    </section>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <script type="text/javascript" src="js/story/graphNiveauDeJeu.js"></script>
+    <script type="text/javascript" src="js/story/graphMap.js"></script>
+    <script type="text/javascript" src="js/story/graphAccount.js"></script>
+    <script type="text/javascript" src="js/story/lastGraph.js"></script>
 </body>
 </html>

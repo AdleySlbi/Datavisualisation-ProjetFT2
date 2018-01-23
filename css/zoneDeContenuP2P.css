@@ -1,15 +1,4 @@
-#contentArea {
-    margin-left: 250px;
-    padding: 15px;
-    background-color: rgb(230, 234, 237)
-}
 
-h2 {
-    color: rgb(87, 96, 125);
-    font-weight: 400;
-    padding: 10px;
-    display: flex;
-}
 
 /*Partie 1 (4 boite de couleurs différent)*/
 .numbersOnline {
@@ -65,29 +54,3 @@ h2 {
     margin-top: 60px;
 }
 /*Fin de la partie 1*/
-
-/*Partie 2*/
-.accDuringGame {
-    background-color: #fff;
-    margin: 20px 38px 0px 38px;
-    border-radius: 10px;
-    overflow: hidden;
-}
-/*Fin de la Partie 2*/
-
-/*Partie 3*/
-.twoCamembert {
-    margin: 20px 38px 0px 38px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.camembert {
-    width: 45%;
-    background-color: white;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-/*Fin de la Partie 3*/
