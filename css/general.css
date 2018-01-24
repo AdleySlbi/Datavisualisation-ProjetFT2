@@ -142,8 +142,9 @@ nav {
 h2 {
     color: rgb(87, 96, 125);
     font-weight: 400;
-    padding: 10px;
+    padding: 20px;
     display: flex;
+    text-transform: uppercase;
 }
 
 .forBoxes {
@@ -164,3 +165,35 @@ h2 {
     text-align: center;
 }
 
+.wrapperForGraphLast {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-height: 500px;
+}
+
+.listContinent {
+    text-align: center;
+    border: 2px solid #fff;
+    background-color: #262C3A;
+}
+
+.continent {
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border: 1px solid black;
+    list-style-type: none;
+    transition: all 0.3s ease-in-out;
+    color: #fff;
+    
+}
+
+.continent:hover {
+    background-color: #12151c;
+    cursor: pointer;
+}
+
+#onZoom {
+    border: 2px solid;
+    background-color: #49546f;
+}

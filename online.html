@@ -37,7 +37,7 @@
             <a href="#" class="elementHeaderUn">
                 <i class="fa fa-cog" aria-hidden="true"></i>
             </a>
-            <a href="#" class="elementHeaderUn">
+            <a href="index.html" class="elementHeaderUn">
                 <i class="fa fa-power-off" aria-hidden="true"></i>
             </a>
         </div>
@@ -49,7 +49,7 @@
         <div class="presentationField">
             <div class="infoSurMdj">
                 <h1 class="actualGameMode">Online</h1>
-                <p class="subtitleGameMode">Lorem ipsum doloris tempuris novalis rosas temporalis</p>
+                <p class="subtitleGameMode">Le mode de jeu Online est jouable par le biais d'un réseau internet.</p>
                 <p class="performanceGameMode">Performances</p>
             </div>
         </div>
@@ -76,7 +76,7 @@
                 <p class="nombresOnline">12 201</p >
             </div>
             <div class="nombres" id="boiteNombreTrois">
-                <p class="texteForSquares">Total des parties lancées en <br> MATCH MAKING</p>
+                <p class="texteForSquares">Total des parties lancées en <br> MATCHMAKING</p>
                 <p  class="nombresOnline">25 922</p >
             </div>
             <div class="nombres" id="boiteNombreQuatre">
@@ -89,7 +89,7 @@
 
         <!--Début de la Partie 2-->
         <div class="forBoxes">
-            <h2>COMMENT LES PARTIES EN LIGNE SONT LANCÉS</h2>
+            <h2>Lancement d'une partie</h2>
             <!-- Insérer le graphique "graphPartieDeux" -->
             <div id="graph_part_2"></div>
         </div>
@@ -97,7 +97,7 @@
 
         <!--Début de la Partie 3-->
         <div class="endGame">
-            <h2>LES RAISON POURQUOI LES PARTIES SE FINISSENT</h2>
+            <h2>Raisons de fin de parties</h2>
             <div class="containerForEndGame">
                 <div class="boxEnd" id="trophé">
                     <img src="img/trophe.png" alt="imageDeTrophé" class="imgEndGame">
@@ -117,7 +117,7 @@
                 <div class="boxEnd" id="networkError">
                     <img src="img/reseau.png" alt="imageDeTrophé" class="imgEndGame">
                     <span class="nombreFinDePartie">2 568</span>
-                    <p class="textContentFinDePartie">Nombre de sessions qui se termine suite à un problème de connexion</p>
+                    <p class="textContentFinDePartie">Nombre de sessions qui se terminent suite à un problème de connexion</p>
                 </div> 
             </div> 
         </div>
@@ -125,7 +125,7 @@
 
         <!--Début de la Partie 4-->
         <div class="forBoxes">
-            <h2>MODE DE JEU LE PLUS JOUÉ PAR PAYS</h2>
+            <h2>détails des raisons de fin de parties par pays</h2>
                 <div class="wrapperForGraph">
                     <div id="graph_map"><!-- Insérer le graphique de la carte--></div>
                 </div>
@@ -134,10 +134,23 @@
 
         <!--Début de la Partie 5-->
         <div class="forBoxes">
-            <h2>MODE DE JEU LE PLUS JOUÉ PAR PAYS</h2>
-            <div class="wrapperLastGraph">
-                <div id="graph_zoom"><!--Insérer le graphique--></div>
-            </div>
+            <h2>Modes de jeu le plus joués par pays</h2>
+            <div class="wrapperForGraphLast">
+                    <div id="graph_zoom">
+                        <!-- Add the graph lastGraph.js -->
+                    </div>
+                    <div class="country">
+                        <ul class="listContinent">
+                            <li class="continent" id="onZoom">Europe</li>
+                            <li class="continent">Asie</li>
+                            <li class="continent">Amérique du Nord</li>
+                            <li class="continent">Amérique du Sud</li>
+                            <li class="continent">Afrique</li>
+                            <li class="continent">Océanie</li>
+                            <li class="continent">Antartique</li>
+                        </ul>
+                    </div>
+                </div>
         </div>
         <!--Fin de la partie 5-->
 
