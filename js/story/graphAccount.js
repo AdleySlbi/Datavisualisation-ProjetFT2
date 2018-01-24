@@ -3,31 +3,27 @@ google.charts.setOnLoadCallback(drawStacked);
 
 function drawStacked() {
       var data = google.visualization.arrayToDataTable([
-        ['Country', 'Invite Received', 'Invite Sent', 'Matchmaking'],
-        ['United State', 5934, 5727, 562],
-        ['France', 1166, 1199, 143],
-        ['Canada', 1046, 950, 124],
-        ['United Kingdom', 552, 600, 94],
-        ['South Korea', 532, 509, 60],
-        ['Germany', 384,565, 43],
-        ['Switzerland', 258, 192, 54],
-        ['Russia', 205, 217, 70],
-        ['Australia', 212, 208, 31],
-        ['Spain', 163, 192, 54],
-        ['Brazil', 153, 171, 14],
-        ['Poland', 157, 159, 6],
-        ['China', 141, 138, 3],
-        ['Italy', 97, 97, 26],
-        ['Thailand', 109, 100, 8],
+        ['Status', 'Signed In', 'Not SignedIn'],
+        ['United State', 121021, 42418],
+        ['France', 31934, 13210],
+        ['Canada', 24854, 7812],
+        ['United Kingdom', 23188, 6783],
+        ['Germany', 13566, 3847],
+        ['Australia', 9359, 2389],
+        ['Spain', 6946, 3475],
+        ['South Korea', 5772, 3204],
+        ['Belgium', 4346, 1930],
+        ['Switzerland', 4357, 1615]
       ]);
       
       var options = {
         chartArea: {width: '50%'},
         isStacked: true,
+        height: 400,
         hAxis: {
           title: 'Total des parties',
           minValue: 0,
-          ticks: [0, 2500, 5000, 7500, 10000, 12500]
+          ticks: [0, 34000, 68000, 102000, 136000, 170000]
         },
         vAxis: {
           title: 'Pays'

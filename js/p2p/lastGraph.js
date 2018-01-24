@@ -33,5 +33,3 @@ var options = {
 var chart = new google.visualization.GeoChart(document.getElementById('graph_zoom'));
 chart.draw(data, options);
 };
-/*Changer le titre dans le HTML en Repartion des modes de jeu par pays */
-    
